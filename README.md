@@ -59,11 +59,14 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9y
   ```
 - Descending Для получения файла необходимо передать каким образом будут сортироваться стобцы Order by = Descending ==false, Order by desc = Descending == true .
 - Filters Указать колоноку (её номер от 0) и регулярные выражение, по которым будет фильтроваться колонка. Передается словарь ключ-значение (ключ - ID, значение - Регулярное выражение). 
+- FileId Номер файла, который нужно получить.
 - ColumnSortingSequence Указать последовательность, согласно которой будут сортироваться колонки. Указывать нужно НАЗВАНИЕ колонок, а не их номер.
 Помимо этого нужно передать в заголовке токен для Авторизации
  ```json
 {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsIm5iZiI6MTY2MDIyMTU3NCwiZXhwIjoxNjYwMjI3NTc0LCJpc3MiOiJNeUF1dGhTZXJ2ZXIiLCJhdWQiOiJNeUF1dGhDbGllbnQifQ.o6SEbVaxjRlmfD2a3mZh6OISVs_qJUj7kaadGhe45A8","username":"admin"}
   ```
+  
+  Метод вернет файл отсортированыый и отфильтрованный.
   
   ### /File/Upload
  
